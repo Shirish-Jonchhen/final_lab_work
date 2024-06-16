@@ -1,0 +1,104 @@
+.contact-us-content {
+    padding-top: 10%;
+    text-align: center;
+    background-image: url('../../assets/contact-bg.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: left 170%;
+    width: 100%;
+}
+
+.contact-us-content .contact-us-header {
+    padding-bottom: 5%;
+
+}
+
+.contact-us-content .contact-us-header strong {
+    background: linear-gradient(to right, #ff9a9e, #c99dbb, #feada6);
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-us-content .contact-us-header p {
+    font-size: small;
+}
+
+.contact-us-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.contact-us-options .contact-us-option {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2% 5%;
+    border-radius: 10px;
+    /* border: #333 1px solid; */
+    margin-left: 5%;
+    /* width: 2rem; */
+    box-shadow: 2px 2px 5px 0 rgb(100, 99, 99);
+}
+
+.contact-us-options .contact-us-option .contact-us-option-icon {
+    padding: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #ff9a9e;
+}
+
+.contact-us-options .contact-us-option .contact-us-option-icon svg {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-us-options .contact-us-option .contact-us-option-title {
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 5%;
+
+}
+
+.contact-us-options .contact-us-option .contact-us-option-title span {
+    font-size: small;
+    font-weight: normal;
+}
+
+.contact-us-options .contact-us-option .contact-us-option-link {
+    padding: 0.5% 0;
+}
+
+.contact-us-options .contact-us-option .contact-us-option-link a {
+    text-decoration: none;
+    font-size: medium;
+    padding: 10px 50px;
+    /* background-color: green; */
+    border-radius: 5px;
+    font-weight: bold;
+    color: green;
+    /* width: 60%; */
+}
+
+.contact-us-time {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: small;
+}
+
+.contact-us-options .contact-us-option:first-child .contact-us-option-link a {
+    text-decoration: none;
+    font-size: medium;
+    padding: 10px 50px;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    /* width: 60%; */
+}

@@ -1,0 +1,243 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+
+}
+
+.hero h1 {
+    font-size: 3rem;
+    background: linear-gradient(to right, #ff9a9e, #c99dbb, #feada6);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero .hero-sub-text {
+    font-size: medium;
+    color: grey;
+    margin-bottom: 5%;
+}
+
+.hero button {
+    background: linear-gradient(to right, #ff9a9e, #c99dbb, #feada6);
+    color: #333;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.feedback {
+    width: 75%;
+    align-items: start;
+    justify-content: start;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 5%;
+}
+
+.feedback .quot {
+    font-size: 7rem;
+    height: 70px;
+    text-align: left;
+    font-family: 'arial';
+    align-self: flex-start;
+    margin-left: 5%;
+    /* background-color: #c99dbb; */
+}
+
+.feedback .feedback-text {
+    font-size: medium;
+    text-align: left;
+    font-family: 'arial';
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 0;
+    line-height: 1.5;
+    /* background-color: #c99dbb; */
+
+}
+
+.feedback .feedback-text span {
+    font-size: small;
+    text-align: left;
+    font-family: 'arial';
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 0;
+    color: grey
+        /* background-color: #c99dbb; */
+    ;
+}
+
+
+.eval-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    margin-bottom: 2%;
+    background-image: url('../../assets/botique.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 5%;
+}
+
+.eval {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333;
+
+}
+
+.eval .eval-sub-title {
+    font-size: medium;
+    color: grey;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.eval .eval-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    margin-bottom: 5%;
+}
+
+
+.eval .eval-cards .eval-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.eval .eval-cards .eval-card strong {
+    font-size: larger;
+    /* background-color: #ff9a9e; */
+
+}
+
+.eval .eval-cards .eval-card p {
+    font-size: smaller;
+    /* background-color: #333; */
+    margin-top: 0;
+}
+
+.top-designs {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.top-designs .top-designs-sub-title {
+    font-size: medium;
+    color: grey;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.top-designs .designs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    /* Allow rows to adjust to content */
+    gap: 20px;
+    /* Gap between grid items */
+    margin-bottom: 5%;
+}
+
+.top-designs .designs .design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3%;
+    /* border: #333 1px solid; */
+    padding: 3%;
+    border-radius: 10px;
+    height: 100%;
+    /* Ensure the design item takes full height of its grid cell */
+}
+
+.top-designs .designs .design img {
+    width: 100%;
+    height: 100%;
+    /* Ensure the image takes full height of its container */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.top-designs .designs .design .design-text {
+    font-size: medium;
+    color: grey;
+    text-align: center;
+}
+
+.service-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 5%;
+}
+
+.service-block .service {
+    flex: 1;
+    margin: 0 5%;
+}
+
+.service-block .service strong {
+    font-size: large;
+    color: #333;
+
+}
+
+.service-block .service p {
+    font-size: small;
+    color: #333;
+
+}
+
+.service-block .service-img {
+    flex: 1;
+}
+
+.service-block .service-img img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    /* Adjust the maximum width as needed */
+    max-height: 300px;
+    /* Adjust the maximum height as needed */
+    object-fit: cover;
+    background-color: red;
+}

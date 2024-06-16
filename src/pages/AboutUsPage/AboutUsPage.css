@@ -1,0 +1,240 @@
+.about-us-wrapper {
+    align-items: center;
+    background-image: url('https://intopros.com/static/media/vector.fe46a6d6ef9d25e4cfef.png');
+    background-position: 0px -60px;
+    background-size: cover;
+    display: flex;
+
+    padding-top: 6rem;
+    padding-bottom: 15%;
+
+}
+
+.about-us {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+.about-us .about-us-txt {
+    flex: 1;
+}
+
+.about-us .about-us-header strong {
+    font-size: larger;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff9a9e, #c99dbb, #feada6);
+    background-clip: text;
+    color: transparent;
+}
+
+.about-us .about-us-content {
+    font-size: small;
+    padding: 10px;
+}
+
+.about-us .about-us-img {
+    flex: 1;
+    align-self: flex-end;
+    text-align: center;
+    margin-bottom: -15%;
+    /* margin-left: -15%; */
+    /* margin-top: 3/0%; */
+
+}
+
+
+.team {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 8%;
+
+}
+
+.team .team-sub-title p {
+    font-size: medium;
+    color: grey;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.team .members {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2%;
+    /* Added gap to control space between items */
+    justify-content: center;
+}
+
+.team .members .member {
+    margin: 3%;
+    padding: 3%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team .members .member img {
+    width: 150px;
+    /* Set a fixed width */
+    height: 150px;
+    /* Set a fixed height */
+    border-radius: 1000px;
+    object-fit: cover;
+}
+
+.team .members .member .design-text {
+    font-size: medium;
+    color: grey;
+    text-align: center;
+}
+
+
+
+
+
+.client {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-image: url('../../assets/tailor_bg.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: left center;
+    /* background-color: pink; */
+}
+
+
+
+.client-form {
+    display: flex;
+    width: 85%;
+    /* background-color: red; */
+}
+
+.client-form .client-form-slogan {
+    flex: 1;
+    padding-right: 30%;
+    align-content: center;
+    /* width: 75%; */
+}
+
+.client-form .client-form-slogan b {
+    font-size: x-large;
+
+    text-shadow: 2px 2px 6px rgba(225, 225, 225, 1000);
+    /* Shadow effect */
+    color: black
+}
+
+.client-form .client-form-slogan p {
+    font-size: small;
+    text-align: right;
+    width: 100%;
+    text-shadow: 2px 2px 6px rgba(225, 225, 225, 1000);
+    /* Shadow effect */
+    color: black
+}
+
+
+.client-form .client-form-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: #333 1px solid;
+    border-radius: 5px;
+    box-shadow: #333 2px 5px 20px;
+    padding: 5%;
+    background-color: white;
+}
+
+.client-form .client-form-title form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5% 0;
+}
+
+.client-form .client-form-title form input[type="text"],
+.client-form .client-form-title form input[type="email"],
+.client-form .client-form-title form input[type="number"] {
+    width: 100%;
+    margin-bottom: 5%;
+    border-bottom: grey 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.client-form .client-form-title form input[type="text"]:focus,
+.client-form .client-form-title form input[type="email"]:focus,
+.client-form .client-form-title form input[type="number"]:focus {
+    border-bottom-color: pink;
+    outline: none;
+    /* Optional: remove the default outline */
+}
+
+.client-form .client-form-title form textarea {
+    width: 100%;
+    margin-bottom: 5%;
+    border: none;
+    border-bottom: grey 1px solid;
+    /* padding: 10px 0; */
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-bottom-color 0.3s ease;
+    font-family: inherit;
+    font-size: small;
+    line-height: 1.5em;
+}
+
+.client-form .client-form-title form textarea:focus {
+    border-bottom-color: pink;
+    /* Change bottom border color to pink when focused */
+    outline: none;
+    /* Remove default outline */
+}
+
+.client-form .client-form-title form button {
+    background-color: #ff9a9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: medium;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.client-form .client-form-title form button:hover {
+    background-color: #ff7b81;
+    transform: translateY(-2px);
+}
+
+.client-form .client-form-title form button:active {
+    background-color: #e86b6f;
+    transform: translateY(0);
+}
+
+
+.client-form .client-form-title strong {
+    font-size: x-large;
+}

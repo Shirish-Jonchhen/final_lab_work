@@ -1,0 +1,14 @@
+/node_modules
+/build
+/dist
+/out
+.env*
+.vscode/
+.idea/
+*.swp
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+yarn.lock
+package-lock.json
