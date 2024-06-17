@@ -2,8 +2,12 @@ import React from 'react';
 import './ContactUsPage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import Footer from '../../components/Footer/Footer';
+import { Helmet } from 'react-helmet';
 const ContactUs = () => {
     return <div className='content'>
+        <Helmet>
+            <title>Pushpa Kaju - Contact Us</title>
+        </Helmet>
         <NavBar />
         <div className='contact-us-content'>
             <div className='contact-us-header'>
@@ -57,7 +61,7 @@ const ContactUs = () => {
                     </div>
 
                     <div className='contact-us-option-link'>
-                        <a href='/contact'>+977 9876543210 </a>
+                        <a href='/pushpa-kaju-contact'>+977 9876543210 </a>
                     </div>
                 </div>
             </div>

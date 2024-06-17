@@ -14,9 +14,24 @@ import designing from '../../assets/services/design.jpg';
 import crafting from '../../assets/services/crafting.jpg';
 import tailoring from '../../assets/services/tailoring.jpg';
 import delivery from '../../assets/services/delivery.jpg';
+import { Helmet } from 'react-helmet';
 const Home = () => {
+
+    const onVisitStore = () => {
+        alert('You are visiting the store');
+    }
+
+    const desgindesc = "Designing clothing is an intricate blend of art, science, and cultural expression. It begins with a creative vision, often inspired by trends, historical influences, and personal aesthetics. Designers sketch their ideas, meticulously planning every detail from fabric selection to color palettes, ensuring each piece not only looks appealing but also feels comfortable and functional. They consider the silhouette and structure, balancing innovation with wearability. The process involves understanding textiles and their properties, such as drape and durability, to create garments that are both stylish and long-lasting. Attention to detail is crucial, from the stitching techniques to the placement of embellishments, ensuring high-quality craftsmanship. Designers must also anticipate market trends and consumer preferences, blending originality with commercial appeal. Sustainability is becoming increasingly important, prompting designers to source eco-friendly materials and adopt ethical practices. Ultimately, designing clothing is about creating pieces that resonate with people, allowing them to express their individuality and feel confident in their attire. This fusion of creativity and practicality makes fashion design a dynamic and continually evolving field."
+    const craftingDesc = "Crafting is a deeply rewarding and meticulous process that transforms raw materials into beautifully finished products. It involves a high level of skill and attention to detail, whether working with wood, metal, textiles, or other mediums. Artisans begin with a concept, often drawing inspiration from tradition, nature, or modern design trends, and then carefully select their materials for quality and suitability. The process of crafting requires a combination of creativity and technical knowledge, as artisans use tools and techniques that have been honed over years, sometimes centuries. Each step, from cutting and shaping to joining and finishing, is performed with precision to ensure the final product is both functional and aesthetically pleasing. Crafting is not just about creating objects; it’s about imbuing each piece with a sense of character and craftsmanship that reflects the maker's dedication and artistry. In a world increasingly dominated by mass production, handcrafted items stand out for their uniqueness and superior quality. They carry a story and a personal touch that machines cannot replicate, making them cherished items in any setting. Through crafting, artisans preserve traditional skills and contribute to a culture of quality and creativity that enriches our lives."
+    const tailoringDesc = "Tailoring is the art and science of customizing garments to fit an individual's unique body shape, ensuring both comfort and style. This meticulous process begins with precise measurements taken by the tailor, who then selects the appropriate fabric based on the client's preferences and the garment's intended use. Each piece of fabric is cut with precision, taking into account the pattern and grain to ensure a perfect drape. The tailor skillfully assembles the garment using advanced stitching techniques, paying close attention to details such as seams, hems, and linings, which contribute to the overall quality and durability. Fit is paramount in tailoring; a well-tailored garment enhances the wearer’s silhouette, providing a polished and professional appearance. Tailors often make multiple fittings, adjusting the garment based on the client's feedback to achieve the ideal fit. This process not only enhances the garment's aesthetic appeal but also ensures maximum comfort and freedom of movement. Tailoring combines technical expertise with an understanding of fashion trends and individual style, resulting in bespoke pieces that are both timeless and contemporary. In a world of ready-to-wear clothing, tailored garments stand out for their personalized fit and superior craftsmanship, reflecting the tailor's dedication to their craft. Whether it's a bespoke suit, a custom dress, or a perfectly fitted pair of trousers, tailoring celebrates the art of making clothing that is as unique as the individual who wears it."
+    const deliveryDesc = "Delivery is a vital component of customer service, ensuring products reach buyers swiftly and in excellent condition. This process begins with careful packaging to safeguard items during transit, followed by efficient logistics planning to determine the quickest, most cost-effective routes. Advanced tracking systems keep customers informed, providing real-time updates and transparency. Companies offer various delivery options, including express services, to meet urgent needs. Clear communication about delivery times enhances the customer experience, while efficient handling of returns and exchanges ensures satisfaction. Navigating international shipping regulations smoothly is crucial for global transactions. Timely delivery is especially important in fast-paced industries like fashion. As e-commerce grows, reliable delivery becomes increasingly essential, impacting brand reputation and customer loyalty. Investing in robust delivery solutions is key to thriving in a competitive market."
+    
+    
     return (
         <div className='content'>
+            <Helmet>
+                <title>Pushpa Kaju - Home</title>
+            </Helmet>
             <NavBar />
 
             <div className='hero'>
@@ -28,7 +43,7 @@ const Home = () => {
                     Discover timeless elegance and modern comfort with our clothing brand,<br /> blending sophisticated designs with premium fabrics for you.
                 </div>
 
-                <button>Visit Store</button>
+                <button onClick={onVisitStore}>Visit Store</button>
             </div>
 
             <div className='feedback'>
@@ -144,7 +159,7 @@ const Home = () => {
                 <div className='service-block'>
                     <div className='service'>
                         <strong>Design</strong>
-                        <p>Designing clothing is an intricate blend of art, science, and cultural expression. It begins with a creative vision, often inspired by trends, historical influences, and personal aesthetics. Designers sketch their ideas, meticulously planning every detail from fabric selection to color palettes, ensuring each piece not only looks appealing but also feels comfortable and functional. They consider the silhouette and structure, balancing innovation with wearability. The process involves understanding textiles and their properties, such as drape and durability, to create garments that are both stylish and long-lasting. Attention to detail is crucial, from the stitching techniques to the placement of embellishments, ensuring high-quality craftsmanship. Designers must also anticipate market trends and consumer preferences, blending originality with commercial appeal. Sustainability is becoming increasingly important, prompting designers to source eco-friendly materials and adopt ethical practices. Ultimately, designing clothing is about creating pieces that resonate with people, allowing them to express their individuality and feel confident in their attire. This fusion of creativity and practicality makes fashion design a dynamic and continually evolving field.</p>
+                        <p>{desgindesc}</p>
                     </div>
                     <div className='service-img'>
                         <img src={designing} alt='design' />
@@ -157,15 +172,13 @@ const Home = () => {
                     <div className='service'>
                         <strong>Crafting</strong>
                         <p>
-                            Crafting is a deeply rewarding and meticulous process that transforms raw materials into beautifully finished products. It involves a high level of skill and attention to detail, whether working with wood, metal, textiles, or other mediums. Artisans begin with a concept, often drawing inspiration from tradition, nature, or modern design trends, and then carefully select their materials for quality and suitability. The process of crafting requires a combination of creativity and technical knowledge, as artisans use tools and techniques that have been honed over years, sometimes centuries. Each step, from cutting and shaping to joining and finishing, is performed with precision to ensure the final product is both functional and aesthetically pleasing. Crafting is not just about creating objects; it’s about imbuing each piece with a sense of character and craftsmanship that reflects the maker's dedication and artistry. In a world increasingly dominated by mass production, handcrafted items stand out for their uniqueness and superior quality. They carry a story and a personal touch that machines cannot replicate, making them cherished items in any setting. Through crafting, artisans preserve traditional skills and contribute to a culture of quality and creativity that enriches our lives.</p>
+                            {craftingDesc}</p>
                     </div>
                 </div>
                 <div className='service-block'>
                     <div className='service'>
                         <strong>Tailoring</strong>
-                        <p>Tailoring is the art and science of customizing garments to fit an individual's unique body shape, ensuring both comfort and style. This meticulous process begins with precise measurements taken by the tailor, who then selects the appropriate fabric based on the client's preferences and the garment's intended use. Each piece of fabric is cut with precision, taking into account the pattern and grain to ensure a perfect drape. The tailor skillfully assembles the garment using advanced stitching techniques, paying close attention to details such as seams, hems, and linings, which contribute to the overall quality and durability.
-
-                            Fit is paramount in tailoring; a well-tailored garment enhances the wearer’s silhouette, providing a polished and professional appearance. Tailors often make multiple fittings, adjusting the garment based on the client's feedback to achieve the ideal fit. This process not only enhances the garment's aesthetic appeal but also ensures maximum comfort and freedom of movement. Tailoring combines technical expertise with an understanding of fashion trends and individual style, resulting in bespoke pieces that are both timeless and contemporary. In a world of ready-to-wear clothing, tailored garments stand out for their personalized fit and superior craftsmanship, reflecting the tailor's dedication to their craft. Whether it's a bespoke suit, a custom dress, or a perfectly fitted pair of trousers, tailoring celebrates the art of making clothing that is as unique as the individual who wears it.</p>
+                        <p>{tailoringDesc}</p>
                     </div>
                     <div className='service-img'>
                         <img src={tailoring} alt='design' />
@@ -177,7 +190,7 @@ const Home = () => {
                     </div>
                     <div className='service'>
                         <strong>Delivery</strong>
-                        <p>Delivery is a vital component of customer service, ensuring products reach buyers swiftly and in excellent condition. This process begins with careful packaging to safeguard items during transit, followed by efficient logistics planning to determine the quickest, most cost-effective routes. Advanced tracking systems keep customers informed, providing real-time updates and transparency. Companies offer various delivery options, including express services, to meet urgent needs. Clear communication about delivery times enhances the customer experience, while efficient handling of returns and exchanges ensures satisfaction. Navigating international shipping regulations smoothly is crucial for global transactions. Timely delivery is especially important in fast-paced industries like fashion. As e-commerce grows, reliable delivery becomes increasingly essential, impacting brand reputation and customer loyalty. Investing in robust delivery solutions is key to thriving in a competitive market.</p>
+                        <p>{deliveryDesc}</p>
                     </div>
                 </div>
 

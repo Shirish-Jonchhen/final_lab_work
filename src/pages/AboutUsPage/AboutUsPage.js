@@ -19,8 +19,12 @@ import salesMarketingAsst from '../../assets/BOD/sales-asst.png';
 import techLead from '../../assets/BOD/tech-lead.jpeg';
 import techAsst from '../../assets/BOD/tech-asst.png';
 import finance from '../../assets/BOD/finance-associate.png';
+import { Helmet } from 'react-helmet';
 const AboutUs = () => {
     return <div className='content'>
+        <Helmet>
+            <title>Pushpa Kaju - About Us</title>
+        </Helmet>
         <NavBar />
         <div className='about-us-wrapper'>
             <div className='about-us'>

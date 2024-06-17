@@ -1,6 +1,11 @@
 import React from 'react';
 import './NavBar.css';
 const NavBar = () => {
+
+    const handleOnCLick = () => {
+        alert('Please send us an email at info@cyclinebtq.com');
+    }
+
     return <nav className="nav">
         <div className="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hypnotize" viewBox="0 0 16 16">
@@ -21,13 +26,13 @@ const NavBar = () => {
                         </svg>
                         Home</a>
                 </li>
-                <li><a href="/about">
+                <li><a href="/pushpa-kaju-about">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
                         <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
                     </svg>
                     About</a>
                 </li>
-                <li><a href="/contact">
+                <li><a href="/pushpa-kaju-contact">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
                         <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
                     </svg>
@@ -37,10 +42,8 @@ const NavBar = () => {
         </div>
 
         <div className="actions">
-
-
             <div className="login-btn">
-                <button>Login/Sign-up</button>
+                <button onClick={handleOnCLick}>Get Started With a Mail</button>
             </div>
 
         </div>
